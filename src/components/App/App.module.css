@@ -1,0 +1,9 @@
+.app {
+  display: grid;
+  grid: "header" min-content
+         "main" 1fr
+         "footer" min-content 
+         / 1fr;
+  max-width: 1440px;
+  padding: 4rem 6rem;
+}

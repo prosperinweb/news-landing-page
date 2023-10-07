@@ -1,0 +1,25 @@
+.siteLinks {
+  grid-area: siteLinks;
+  color: var(--off-white);
+
+  &__title {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--off-white);
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    &__link {
+      font-size: 1rem;
+      color: var(--grayish-blue);
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--soft-orange);
+      }
+    }
+  }
+}

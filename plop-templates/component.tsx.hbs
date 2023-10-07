@@ -1,0 +1,17 @@
+import styles from './{{pascalCase name}}.module.css';
+
+{{#if (or (eq name "header") (eq name "main") (eq name "footer"))}}
+const {{pascalCase name}} = () => (
+  <{{camelCase name}} className={styles.{{camelCase name}} }>
+    <h1>{{pascalCase name}}</h1>
+  </{{camelCase name}}>
+);
+{{else}}
+const {{pascalCase name}} = () => (
+  <div className={styles.{{camelCase name}} }>
+    <h1>{{pascalCase name}}</h1>
+  </div>
+);
+{{/if}}
+
+export default {{pascalCase name}};

@@ -1,0 +1,62 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  background-color: var(--very-dark-blue);
+  padding: 1rem;
+}
+
+.titleTabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  gap: 1rem;
+}
+
+.title_tab_radio {
+  display: none;
+}
+
+.title_tab_label {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.title_tab_label:has(.title_tab_radio:checked) {
+  font-size: 2rem;
+}
+
+$title-colors: (
+  "New": var(--soft-green),
+  "Popular": var(--soft-orange),
+  "Trending": var(--soft-red)
+);
+
+@each $label, $color in $title-colors {
+  .title_tab_label[for="#{$label}"]:hover,
+  .title_tab_label[for="#{$label}"]:has(.title_tab_radio:checked) {
+    color: $color;
+  }
+}
+
+.sidebar_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar_item {
+  flex: 1;
+}
+.sidebar_item:not(:last-child) {
+  border-bottom: 1px solid var(--off-white);
+  padding-bottom: 1.5rem;
+}
+
+.sidebar_item_title {
+  font-weight: 700;
+  color: var(--off-white);
+}

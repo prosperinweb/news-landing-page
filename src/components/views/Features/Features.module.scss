@@ -1,0 +1,16 @@
+.features {
+    grid-area: features;
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--dark-grayish-blue);
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid;
+    }
+
+    &__list {
+        display: flex;
+        gap: 1rem;
+    }
+}

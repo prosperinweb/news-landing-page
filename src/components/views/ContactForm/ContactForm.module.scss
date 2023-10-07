@@ -1,0 +1,74 @@
+.contactForm {
+  grid-area: contactForm;
+
+  &__title {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    &__label {
+      font-weight: 600;
+      color: var(--off-white);
+      margin-bottom: 0.5rem;
+    }
+
+    &__input,
+    &__textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 2px solid var(--off-white);
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: var(--soft-orange);
+        outline: none;
+      }
+    }
+
+    &__textarea {
+      resize: none;
+      height: 150px;
+    }
+
+    &__errorMessage {
+      color: var(--soft-red);
+    }
+  }
+
+  &__checkbox {
+    margin-right: 8px;
+  }
+
+  &__button {
+    background-color: var(--soft-green);
+    color: var(--off-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($color: hsl(145, 58%, 55%), $amount: 30);
+    }
+
+    &:disabled {
+      background-color: var(--grayish-blue);
+      cursor: not-allowed;
+    }
+  }
+}
+
+.error {
+  color: var(--soft-red);
+  font-size: 0.875em;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  display: none;
+}
