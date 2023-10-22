@@ -1,64 +1,64 @@
 :root {
-  --soft-orange: hsl(35, 77%, 62%);
-  --soft-red: hsl(5, 85%, 63%);
-  --soft-green: hsl(145, 58%, 55%);
-  --off-white: hsl(36, 100%, 99%);
-  --grayish-blue: hsl(233, 8%, 79%);
-  --dark-grayish-blue: hsl(236, 13%, 42%);
-  --very-dark-blue: hsl(240, 100%, 5%);
-  --font-family: "Inter", sans-serif;
-  --facebook: hsl(208, 92%, 53%);
-  --twitter: hsl(203, 89%, 53%);
-  --instagram: linear-gradient(
-    to right,
-    hsl(37, 97%, 70%),
-    hsl(329, 70%, 58%)
-  );
-  --youtube: hsl(348, 97%, 39%);
-  --font-size: 15px;
-  --border-radius: 0px;
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --soft-green: hsl(145, 58%, 55%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+    --font-family: "Inter", sans-serif;
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: linear-gradient(
+        to right,
+        hsl(37, 97%, 70%),
+        hsl(329, 70%, 58%)
+    );
+    --youtube: hsl(348, 97%, 39%);
+    --font-size: 15px;
+    --border-radius: 0px;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  background-color: var(--off-white);
-  color: var(--dark-grayish-blue);
-  font-family: var(--font-family);
-  line-height: 1.5;
-  font-size: var(--font-size);
+    background-color: var(--off-white);
+    color: var(--dark-grayish-blue);
+    font-family: var(--font-family);
+    line-height: 1.5;
+    font-size: var(--font-size);
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 button {
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
 }
 
 input {
-  background-color: transparent;
-  border: 0;
-  outline: 0;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
