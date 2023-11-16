@@ -2,10 +2,12 @@
   grid-area: main;
   display: grid;
   grid:
-    "hero sidebar" 1fr
+    "hero     sidebar" 1fr
     "features features" min-content
-    "footer footer" min-content
+    "footer   footer" min-content
     / 2.5fr 1fr;
   grid-gap: 2rem 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  max-width: 80vw;
+  place-self: center;
 }

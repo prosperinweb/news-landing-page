@@ -9,8 +9,14 @@ const {
   feature__details__description,
 } = styles;
 
-const Feature = ({ idx, imageUri, title, description, path }: FeatureItem) => {
-  const idCount = idx + 1;
+const Feature = ({
+  index,
+  imageUri,
+  title,
+  description,
+  path,
+}: FeatureItem) => {
+  const idCount = index + 1;
   return (
     <a href={path} className={feature}>
       <img className={feature__image} src={imageUri} alt={title} />

@@ -1,5 +1,5 @@
-import styles from "./Header.module.css";
-import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
+import styles from "./Header.module.scss";
+import Logo from "../../../assets/images/logo.svg?react";
 import { Navbar } from "../../views";
 
 const Header = () => (

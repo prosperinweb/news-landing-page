@@ -1,0 +1,14 @@
+.header {
+  grid-area: header;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--off-white);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block-start: 3rem;
+  padding-block-end: 1rem;
+  padding-inline: 10vw;
+}
