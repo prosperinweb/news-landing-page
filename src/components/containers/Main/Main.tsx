@@ -10,19 +10,41 @@ const FEATURE_ITEMS = [
     path: "/reviving-retro-pcs",
   },
   {
-    id: "eicj12r4",
+    id: "eicj124434",
     imageUri: "https://source.unsplash.com/featured/?gaming",
     title: " Top 10 Laptops of 2023",
     description: "A sneak peek at the laptops of the future.",
     path: "/top-10-laptops-of-2023",
   },
   {
-    id: "eickj12r4",
+    id: "eickj234r4",
     imageUri: "https://source.unsplash.com/featured/?gaming",
     title: "The Growth of Gaming",
     description: "How the pandemic has sparked fresh opportunities.",
     path: "/the-growth-of-gaming",
   },
+  {
+    id: "eickyrw2r4",
+    imageUri: "https://source.unsplash.com/featured/?gaming",
+    title: "The Growth of Gaming",
+    description: "How the pandemic has sparked fresh opportunities.",
+    path: "/the-growth-of-gaming",
+  },
+  {
+    id: "eickury2r4",
+    imageUri: "https://source.unsplash.com/featured/?gaming",
+    title: "The Growth of Gaming",
+    description: "How the pandemic has sparked fresh opportunities.",
+    path: "/the-growth-of-gaming",
+  },
+  {
+    id: "eickiem2r4",
+    imageUri: "https://source.unsplash.com/featured/?gaming",
+    title: "The Growth of Gaming",
+    description: "How the pandemic has sparked fresh opportunities.",
+    path: "/the-growth-of-gaming",
+  },
+
 ];
 
 const Main = () => (
