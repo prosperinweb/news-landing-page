@@ -13,7 +13,7 @@
 
   &__copyright {
     grid-area: copyright;
-    text-align: center;
+    place-self: center;
     font-size: 0.9rem;
     color: var(--very-dark-blue);
     margin-top: 3em;

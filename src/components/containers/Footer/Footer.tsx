@@ -1,19 +1,26 @@
+import React from "react";
 import { ContactForm, ResourceLinks, SocialLinks } from "../../views";
 import styles from "./Footer.module.scss";
 
-const { footer, footer__copyright } = styles;
-
-const Footer = () => {
+/**
+ * Renders a footer section in a TypeScript-React application.
+ * The footer includes a set of components such as `ResourceLinks`, `SocialLinks`, `ContactForm`, and `CopyRight`.
+ */
+const Footer: React.FC = () => {
   return (
-    <footer className={footer}>
+    <footer className={styles.footer}>
       <ResourceLinks />
       <SocialLinks />
       <ContactForm />
-      <div className={footer__copyright}>
-        &copy; {new Date().getFullYear()} WorldNews. All rights reserved.
-      </div>
+      <CopyRight />
     </footer>
   );
 };
+
+const CopyRight = () => (
+  <div className={styles.copyright}>
+    &copy; {new Date().getFullYear()} WorldNews. All rights reserved.
+  </div>
+);
 
 export default Footer;
